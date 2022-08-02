@@ -16,6 +16,13 @@
 		0BA06DFF28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DFE28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift */; };
 		0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */; };
 		0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */; };
+		0BF5EC532897E69F000A16FB /* Gibson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */; };
+		0BF5EC542897E69F000A16FB /* Gibson-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */; };
+		0BF5EC552897E69F000A16FB /* Gibson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */; };
+		0BF5EC562897E69F000A16FB /* Gibson-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC452897E69F000A16FB /* Gibson-RegularItalic.ttf */; };
+		0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC462897E69F000A16FB /* UIViewExtension.swift */; };
+		0BF5EC582897E69F000A16FB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC472897E69F000A16FB /* ColorExtension.swift */; };
+		0BF5EC592897E69F000A16FB /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC482897E69F000A16FB /* UIFontExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		0BA06DFE28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
 		0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Regular.ttf"; sourceTree = "<group>"; };
+		0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Bold.ttf"; sourceTree = "<group>"; };
+		0BF5EC452897E69F000A16FB /* Gibson-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-RegularItalic.ttf"; sourceTree = "<group>"; };
+		0BF5EC462897E69F000A16FB /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0BF5EC472897E69F000A16FB /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0BF5EC482897E69F000A16FB /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,7 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				0BF5EC342897E605000A16FB /* Utils */,
 				0BA06E0C28971AC000A1EB30 /* NetworkLayer */,
 				0BA06E0B28971AB600A1EB30 /* Enumerations */,
 				0BA06DE128971A8F00A1EB30 /* CartrackAssignmentApp.swift */,
@@ -147,6 +162,36 @@
 				0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		0BF5EC342897E605000A16FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC352897E69F000A16FB /* Resources */,
+				0BF5EC472897E69F000A16FB /* ColorExtension.swift */,
+				0BF5EC482897E69F000A16FB /* UIFontExtension.swift */,
+				0BF5EC462897E69F000A16FB /* UIViewExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0BF5EC352897E69F000A16FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC412897E69F000A16FB /* GibsonFont */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BF5EC412897E69F000A16FB /* GibsonFont */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */,
+				0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */,
+				0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */,
+				0BF5EC452897E69F000A16FB /* Gibson-RegularItalic.ttf */,
+			);
+			path = GibsonFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +298,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5EC532897E69F000A16FB /* Gibson-Regular.ttf in Resources */,
+				0BF5EC542897E69F000A16FB /* Gibson-BoldItalic.ttf in Resources */,
 				0BA06DE928971A9100A1EB30 /* Preview Assets.xcassets in Resources */,
 				0BA06DE628971A9100A1EB30 /* Assets.xcassets in Resources */,
+				0BF5EC562897E69F000A16FB /* Gibson-RegularItalic.ttf in Resources */,
+				0BF5EC552897E69F000A16FB /* Gibson-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */,
 				0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */,
 				0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */,
 				0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
+				0BF5EC582897E69F000A16FB /* ColorExtension.swift in Sources */,
+				0BF5EC592897E69F000A16FB /* UIFontExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
