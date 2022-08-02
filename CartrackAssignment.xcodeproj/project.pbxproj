@@ -14,6 +14,8 @@
 		0BA06DF328971A9100A1EB30 /* CartrackAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DF228971A9100A1EB30 /* CartrackAssignmentTests.swift */; };
 		0BA06DFD28971A9100A1EB30 /* CartrackAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DFC28971A9100A1EB30 /* CartrackAssignmentUITests.swift */; };
 		0BA06DFF28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DFE28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift */; };
+		0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */; };
+		0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0BA06DF828971A9100A1EB30 /* CartrackAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartrackAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA06DFC28971A9100A1EB30 /* CartrackAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackAssignmentUITests.swift; sourceTree = "<group>"; };
 		0BA06DFE28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
+		0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				0BA06E0C28971AC000A1EB30 /* NetworkLayer */,
+				0BA06E0B28971AB600A1EB30 /* Enumerations */,
 				0BA06DE128971A8F00A1EB30 /* CartrackAssignmentApp.swift */,
 				0BA06DE328971A8F00A1EB30 /* ContentView.swift */,
 				0BA06DE528971A9100A1EB30 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				0BA06DFE28971A9100A1EB30 /* CartrackAssignmentUITestsLaunchTests.swift */,
 			);
 			path = CartrackAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		0BA06E0B28971AB600A1EB30 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		0BA06E0C28971AC000A1EB30 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */,
+				0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */,
 				0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
 			);
