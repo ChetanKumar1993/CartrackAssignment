@@ -23,6 +23,12 @@
 		0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC462897E69F000A16FB /* UIViewExtension.swift */; };
 		0BF5EC582897E69F000A16FB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC472897E69F000A16FB /* ColorExtension.swift */; };
 		0BF5EC592897E69F000A16FB /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC482897E69F000A16FB /* UIFontExtension.swift */; };
+		0BF5EC632897E7E5000A16FB /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC5D2897E7E5000A16FB /* Address.swift */; };
+		0BF5EC642897E7E5000A16FB /* Usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC5E2897E7E5000A16FB /* Usermodel.swift */; };
+		0BF5EC652897E7E5000A16FB /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC5F2897E7E5000A16FB /* Company.swift */; };
+		0BF5EC662897E7E5000A16FB /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC612897E7E5000A16FB /* UsersListView.swift */; };
+		0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC622897E7E5000A16FB /* UserCell.swift */; };
+		0BF5EC692897EAD3000A16FB /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC682897EAD3000A16FB /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,12 @@
 		0BF5EC462897E69F000A16FB /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0BF5EC472897E69F000A16FB /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0BF5EC482897E69F000A16FB /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		0BF5EC5D2897E7E5000A16FB /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		0BF5EC5E2897E7E5000A16FB /* Usermodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
+		0BF5EC5F2897E7E5000A16FB /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		0BF5EC612897E7E5000A16FB /* UsersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		0BF5EC622897E7E5000A16FB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		0BF5EC682897EAD3000A16FB /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				0BF5EC5A2897E7E5000A16FB /* UserList */,
 				0BF5EC342897E605000A16FB /* Utils */,
 				0BA06E0C28971AC000A1EB30 /* NetworkLayer */,
 				0BA06E0B28971AB600A1EB30 /* Enumerations */,
@@ -192,6 +205,43 @@
 				0BF5EC452897E69F000A16FB /* Gibson-RegularItalic.ttf */,
 			);
 			path = GibsonFont;
+			sourceTree = "<group>";
+		};
+		0BF5EC5A2897E7E5000A16FB /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC5B2897E7E5000A16FB /* ViewModel */,
+				0BF5EC5C2897E7E5000A16FB /* Model */,
+				0BF5EC602897E7E5000A16FB /* View */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		0BF5EC5B2897E7E5000A16FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC682897EAD3000A16FB /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF5EC5C2897E7E5000A16FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC5D2897E7E5000A16FB /* Address.swift */,
+				0BF5EC5E2897E7E5000A16FB /* Usermodel.swift */,
+				0BF5EC5F2897E7E5000A16FB /* Company.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BF5EC602897E7E5000A16FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC612897E7E5000A16FB /* UsersListView.swift */,
+				0BF5EC622897E7E5000A16FB /* UserCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,12 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF5EC662897E7E5000A16FB /* UsersListView.swift in Sources */,
 				0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */,
 				0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */,
 				0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */,
+				0BF5EC652897E7E5000A16FB /* Company.swift in Sources */,
 				0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
+				0BF5EC642897E7E5000A16FB /* Usermodel.swift in Sources */,
+				0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */,
+				0BF5EC692897EAD3000A16FB /* UserListViewModel.swift in Sources */,
 				0BF5EC582897E69F000A16FB /* ColorExtension.swift in Sources */,
+				0BF5EC632897E7E5000A16FB /* Address.swift in Sources */,
 				0BF5EC592897E69F000A16FB /* UIFontExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
