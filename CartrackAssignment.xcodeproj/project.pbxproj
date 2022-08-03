@@ -29,6 +29,11 @@
 		0BF5EC662897E7E5000A16FB /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC612897E7E5000A16FB /* UsersListView.swift */; };
 		0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC622897E7E5000A16FB /* UserCell.swift */; };
 		0BF5EC692897EAD3000A16FB /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC682897EAD3000A16FB /* UserListViewModel.swift */; };
+		0BF5EC702897FA95000A16FB /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC6F2897FA95000A16FB /* UserDetailView.swift */; };
+		0BF5EC722898020B000A16FB /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC712898020B000A16FB /* UserDetailCell.swift */; };
+		0BF5EC7428980360000A16FB /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC7328980360000A16FB /* UserDetailViewModel.swift */; };
+		0BF5EC76289803CA000A16FB /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC75289803CA000A16FB /* UserDetailModel.swift */; };
+		0BF5EC7828983160000A16FB /* UserMapAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5EC7728983160000A16FB /* UserMapAddressCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		0BF5EC612897E7E5000A16FB /* UsersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		0BF5EC622897E7E5000A16FB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0BF5EC682897EAD3000A16FB /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		0BF5EC6F2897FA95000A16FB /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		0BF5EC712898020B000A16FB /* UserDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCell.swift; sourceTree = "<group>"; };
+		0BF5EC7328980360000A16FB /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		0BF5EC75289803CA000A16FB /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		0BF5EC7728983160000A16FB /* UserMapAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapAddressCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				0BF5EC6B2897FA66000A16FB /* UserDetail */,
 				0BF5EC5A2897E7E5000A16FB /* UserList */,
 				0BF5EC342897E605000A16FB /* Utils */,
 				0BA06E0C28971AC000A1EB30 /* NetworkLayer */,
@@ -242,6 +253,42 @@
 				0BF5EC622897E7E5000A16FB /* UserCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0BF5EC6B2897FA66000A16FB /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC6E2897FA7C000A16FB /* ViewModel */,
+				0BF5EC6D2897FA75000A16FB /* View */,
+				0BF5EC6C2897FA70000A16FB /* Model */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		0BF5EC6C2897FA70000A16FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC75289803CA000A16FB /* UserDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BF5EC6D2897FA75000A16FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC6F2897FA95000A16FB /* UserDetailView.swift */,
+				0BF5EC712898020B000A16FB /* UserDetailCell.swift */,
+				0BF5EC7728983160000A16FB /* UserMapAddressCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF5EC6E2897FA7C000A16FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5EC7328980360000A16FB /* UserDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,10 +427,15 @@
 			files = (
 				0BF5EC662897E7E5000A16FB /* UsersListView.swift in Sources */,
 				0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */,
+				0BF5EC7428980360000A16FB /* UserDetailViewModel.swift in Sources */,
 				0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */,
 				0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */,
+				0BF5EC76289803CA000A16FB /* UserDetailModel.swift in Sources */,
+				0BF5EC702897FA95000A16FB /* UserDetailView.swift in Sources */,
 				0BF5EC652897E7E5000A16FB /* Company.swift in Sources */,
+				0BF5EC722898020B000A16FB /* UserDetailCell.swift in Sources */,
 				0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */,
+				0BF5EC7828983160000A16FB /* UserMapAddressCell.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
 				0BF5EC642897E7E5000A16FB /* Usermodel.swift in Sources */,
 				0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */,

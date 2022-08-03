@@ -12,17 +12,21 @@ struct UsersListView: View {
     @ObservedObject var userListViewModel = UserListViewModel()
 
     var body: some View {
-        ZStack {
-            List {
-                ForEach(userListViewModel.userList, id: \.id) {
-                    userModel in
-                    UserCell(user: userModel)
+        NavigationView {
+            ZStack {
+                List {
+                    ForEach(userListViewModel.userList, id: \.id) {
+                        userModel in
+                        NavigationLink(destination: UserDetailView(user: userModel)) {
+                            UserCell(name: userModel.name)
+                        }
+                    }
                 }
+                .navigationTitle("Users List")
+            }.onAppear {
+                userListViewModel.getUserList()
             }
-        }.onAppear {
-            userListViewModel.getUserList()
         }
-        
     }
 }
 

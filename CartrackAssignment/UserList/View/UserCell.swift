@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct UserCell: View {
-    var user: Usermodel?
+    var name: String?
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Text(user?.name ?? "").multilineTextAlignment(.leading).padding([.top, .bottom, .trailing]).customFont(withStyle:.Bold, withSize: 20)
-                Spacer()
-                Image("ic_right_arrow")
-                    .resizable().resizable()
-                    .frame(width: 20, height: 20, alignment: .center)
-            }
+            Text(name ?? "").multilineTextAlignment(.leading).padding([.top, .bottom, .trailing]).customFont(withStyle:.Bold, withSize: 20)
         }
     }
 }
