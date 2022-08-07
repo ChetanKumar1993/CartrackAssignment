@@ -17,6 +17,9 @@
 		0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */; };
 		0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */; };
 		0BD8AF51289FE083005534CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD8AF50289FE083005534CC /* Launch Screen.storyboard */; };
+		0BD8AF57289FE29C005534CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8AF56289FE29C005534CC /* LoginView.swift */; };
+		0BD8AF59289FE67C005534CC /* TextInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8AF58289FE67C005534CC /* TextInputField.swift */; };
+		0BD8AF5B289FE73B005534CC /* LoginInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8AF5A289FE73B005534CC /* LoginInputModel.swift */; };
 		0BF5EC532897E69F000A16FB /* Gibson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */; };
 		0BF5EC542897E69F000A16FB /* Gibson-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */; };
 		0BF5EC552897E69F000A16FB /* Gibson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */; };
@@ -68,6 +71,9 @@
 		0BA06E0D28971AD800A1EB30 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
 		0BA06E0F28971AEB00A1EB30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0BD8AF50289FE083005534CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0BD8AF56289FE29C005534CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0BD8AF58289FE67C005534CC /* TextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputField.swift; sourceTree = "<group>"; };
+		0BD8AF5A289FE73B005534CC /* LoginInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputModel.swift; sourceTree = "<group>"; };
 		0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Regular.ttf"; sourceTree = "<group>"; };
 		0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-BoldItalic.ttf"; sourceTree = "<group>"; };
 		0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Bold.ttf"; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				0BD8AF52289FE271005534CC /* Login */,
 				0BF5EC6B2897FA66000A16FB /* UserDetail */,
 				0BF5EC5A2897E7E5000A16FB /* UserList */,
 				0BF5EC342897E605000A16FB /* Utils */,
@@ -191,6 +198,39 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
+		0BD8AF52289FE271005534CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0BD8AF55289FE285005534CC /* ViewModel */,
+				0BD8AF54289FE280005534CC /* View */,
+				0BD8AF53289FE27B005534CC /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0BD8AF53289FE27B005534CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BD8AF5A289FE73B005534CC /* LoginInputModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BD8AF54289FE280005534CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BD8AF56289FE29C005534CC /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BD8AF55289FE285005534CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0BF5EC342897E605000A16FB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +238,7 @@
 				0BF5EC472897E69F000A16FB /* ColorExtension.swift */,
 				0BF5EC482897E69F000A16FB /* UIFontExtension.swift */,
 				0BF5EC462897E69F000A16FB /* UIViewExtension.swift */,
+				0BD8AF58289FE67C005534CC /* TextInputField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -441,12 +482,15 @@
 				0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */,
 				0BF5EC7828983160000A16FB /* UserMapAddressCell.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
+				0BD8AF59289FE67C005534CC /* TextInputField.swift in Sources */,
 				0BF5EC642897E7E5000A16FB /* Usermodel.swift in Sources */,
 				0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */,
 				0BF5EC692897EAD3000A16FB /* UserListViewModel.swift in Sources */,
 				0BF5EC582897E69F000A16FB /* ColorExtension.swift in Sources */,
+				0BD8AF57289FE29C005534CC /* LoginView.swift in Sources */,
 				0BF5EC632897E7E5000A16FB /* Address.swift in Sources */,
 				0BF5EC592897E69F000A16FB /* UIFontExtension.swift in Sources */,
+				0BD8AF5B289FE73B005534CC /* LoginInputModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
