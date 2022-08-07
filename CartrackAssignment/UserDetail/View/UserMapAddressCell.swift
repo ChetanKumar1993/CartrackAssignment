@@ -10,22 +10,28 @@ import MapKit
 
 struct UserMapAddressCell: View {
     
-    var latitude: Double
-    var longitude: Double
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+    @State private var region : MKCoordinateRegion
+    var coordinate: CLLocationCoordinate2D
     
+    init(coordinate : CLLocationCoordinate2D) {
+            self.coordinate = coordinate
+            _region = State(initialValue: MKCoordinateRegion(center: coordinate,
+                                                                 span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)))
+        }
+ 
     var body: some View {
         VStack {
-            Map(coordinateRegion:$mapRegion)
-                .frame(height: 250.0, alignment: .center)
-            
+            Map(coordinateRegion: .constant(MKCoordinateRegion(center: coordinate,
+                                                                       span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))),
+                        showsUserLocation: true,
+                        annotationItems: [Marker(location: MapMarker(coordinate: coordinate))]) { marker in
+                            marker.location
+                    }.frame(height: 250.0, alignment: .center)
         }
-        
     }
 }
 
-struct UserMapAddressCell_Previews: PreviewProvider {
-    static var previews: some View {
-        UserMapAddressCell(latitude: -37.3159, longitude: 81.1496)
-    }
+struct Marker: Identifiable {
+    let id = UUID()
+    var location: MapMarker
 }

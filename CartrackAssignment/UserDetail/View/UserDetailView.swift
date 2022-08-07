@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct UserDetailView: View {
     
@@ -20,7 +21,7 @@ struct UserDetailView: View {
                     ForEach(dataSource, id: \.id) {
                         userModel in
                         if userModel.cellType == .map {
-                            UserMapAddressCell(latitude: userModel.latitude , longitude: userModel.longitude)
+                            UserMapAddressCell(coordinate: CLLocationCoordinate2D(latitude: userModel.latitude, longitude: userModel.longitude))
                         }else {
                             UserDetailCell(title: userModel.title, value: userModel.value ?? "")
                         }

@@ -27,3 +27,4 @@ struct UserDetailModel {
         self.longitude = long
     }
 }
+
