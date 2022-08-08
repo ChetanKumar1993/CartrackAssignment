@@ -24,3 +24,11 @@ This application provides the user login for registered users in sqlite database
 - iOS - Swift, Swift UI
 - Design Architecture - MVVM 
 - Database - Sqlite
+
+## Package Dependency
+
+- Alertkit
+- GRDB
+
+To update package dependencies in project follow below steps:
+- Xcode > File > Packages > Resolve package versions
