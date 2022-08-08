@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B29789D28A0E91D00B2E56C /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B29789C28A0E91D00B2E56C /* FileManager.swift */; };
+		0B6DC43628A16AF2009FD786 /* UsersData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B6DC43528A16AF2009FD786 /* UsersData.sqlite */; };
+		0B6DC43928A1942E009FD786 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6DC43828A1942E009FD786 /* DBManager.swift */; };
 		0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DE128971A8F00A1EB30 /* CartrackAssignmentApp.swift */; };
 		0BA06DE428971A8F00A1EB30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA06DE328971A8F00A1EB30 /* ContentView.swift */; };
 		0BA06DE628971A9100A1EB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA06DE528971A9100A1EB30 /* Assets.xcassets */; };
@@ -24,6 +27,7 @@
 		0BD8AF6028A048D9005534CC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8AF5F28A048D9005534CC /* LoginViewModel.swift */; };
 		0BD8AF6328A04C12005534CC /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD8AF6228A04C12005534CC /* AlertKit */; };
 		0BD8AF6628A05924005534CC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD8AF6528A05924005534CC /* libsqlite3.tbd */; };
+		0BD8AF6928A0606A005534CC /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD8AF6828A0606A005534CC /* GRDB */; };
 		0BF5EC532897E69F000A16FB /* Gibson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC422897E69F000A16FB /* Gibson-Regular.ttf */; };
 		0BF5EC542897E69F000A16FB /* Gibson-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC432897E69F000A16FB /* Gibson-BoldItalic.ttf */; };
 		0BF5EC552897E69F000A16FB /* Gibson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5EC442897E69F000A16FB /* Gibson-Bold.ttf */; };
@@ -62,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B29789C28A0E91D00B2E56C /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		0B6DC43528A16AF2009FD786 /* UsersData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UsersData.sqlite; sourceTree = "<group>"; };
+		0B6DC43828A1942E009FD786 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		0BA06DDE28971A8F00A1EB30 /* CartrackAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartrackAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA06DE128971A8F00A1EB30 /* CartrackAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackAssignmentApp.swift; sourceTree = "<group>"; };
 		0BA06DE328971A8F00A1EB30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD8AF6928A0606A005534CC /* GRDB in Frameworks */,
 				0BD8AF6628A05924005534CC /* libsqlite3.tbd in Frameworks */,
 				0BD8AF6328A04C12005534CC /* AlertKit in Frameworks */,
 			);
@@ -128,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6DC43728A19416009FD786 /* SqliteDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				0B6DC43528A16AF2009FD786 /* UsersData.sqlite */,
+				0B6DC43828A1942E009FD786 /* DBManager.swift */,
+			);
+			path = SqliteDatabase;
+			sourceTree = "<group>";
+		};
 		0BA06DD528971A8F00A1EB30 = {
 			isa = PBXGroup;
 			children = (
@@ -152,12 +169,13 @@
 		0BA06DE028971A8F00A1EB30 /* CartrackAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				0BD8AF5E28A017FE005534CC /* Validations */,
 				0BD8AF52289FE271005534CC /* Login */,
 				0BF5EC6B2897FA66000A16FB /* UserDetail */,
 				0BF5EC5A2897E7E5000A16FB /* UserList */,
+				0BD8AF5E28A017FE005534CC /* Validations */,
 				0BF5EC342897E605000A16FB /* Utils */,
 				0BA06E0C28971AC000A1EB30 /* NetworkLayer */,
+				0B6DC43728A19416009FD786 /* SqliteDatabase */,
 				0BA06E0B28971AB600A1EB30 /* Enumerations */,
 				0BA06DE128971A8F00A1EB30 /* CartrackAssignmentApp.swift */,
 				0BA06DE328971A8F00A1EB30 /* ContentView.swift */,
@@ -267,6 +285,7 @@
 				0BF5EC482897E69F000A16FB /* UIFontExtension.swift */,
 				0BF5EC462897E69F000A16FB /* UIViewExtension.swift */,
 				0BD8AF58289FE67C005534CC /* TextInputField.swift */,
+				0B29789C28A0E91D00B2E56C /* FileManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -381,6 +400,7 @@
 			name = CartrackAssignment;
 			packageProductDependencies = (
 				0BD8AF6228A04C12005534CC /* AlertKit */,
+				0BD8AF6828A0606A005534CC /* GRDB */,
 			);
 			productName = CartrackAssignment;
 			productReference = 0BA06DDE28971A8F00A1EB30 /* CartrackAssignment.app */;
@@ -456,6 +476,7 @@
 			mainGroup = 0BA06DD528971A8F00A1EB30;
 			packageReferences = (
 				0BD8AF6128A04C12005534CC /* XCRemoteSwiftPackageReference "AlertKit" */,
+				0BD8AF6728A0606A005534CC /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			productRefGroup = 0BA06DDF28971A8F00A1EB30 /* Products */;
 			projectDirPath = "";
@@ -480,6 +501,7 @@
 				0BF5EC562897E69F000A16FB /* Gibson-RegularItalic.ttf in Resources */,
 				0BF5EC552897E69F000A16FB /* Gibson-Bold.ttf in Resources */,
 				0BD8AF51289FE083005534CC /* Launch Screen.storyboard in Resources */,
+				0B6DC43628A16AF2009FD786 /* UsersData.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +531,7 @@
 				0BF5EC572897E69F000A16FB /* UIViewExtension.swift in Sources */,
 				0BF5EC7428980360000A16FB /* UserDetailViewModel.swift in Sources */,
 				0BA06E1028971AEB00A1EB30 /* NetworkManager.swift in Sources */,
+				0B6DC43928A1942E009FD786 /* DBManager.swift in Sources */,
 				0BA06E0E28971AD800A1EB30 /* CommonEnums.swift in Sources */,
 				0BF5EC76289803CA000A16FB /* UserDetailModel.swift in Sources */,
 				0BF5EC702897FA95000A16FB /* UserDetailView.swift in Sources */,
@@ -519,6 +542,7 @@
 				0BF5EC7828983160000A16FB /* UserMapAddressCell.swift in Sources */,
 				0BA06DE228971A8F00A1EB30 /* CartrackAssignmentApp.swift in Sources */,
 				0BD8AF59289FE67C005534CC /* TextInputField.swift in Sources */,
+				0B29789D28A0E91D00B2E56C /* FileManager.swift in Sources */,
 				0BF5EC642897E7E5000A16FB /* Usermodel.swift in Sources */,
 				0BF5EC672897E7E5000A16FB /* UserCell.swift in Sources */,
 				0BF5EC692897EAD3000A16FB /* UserListViewModel.swift in Sources */,
@@ -859,6 +883,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		0BD8AF6728A0606A005534CC /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -866,6 +898,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0BD8AF6128A04C12005534CC /* XCRemoteSwiftPackageReference "AlertKit" */;
 			productName = AlertKit;
+		};
+		0BD8AF6828A0606A005534CC /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD8AF6728A0606A005534CC /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

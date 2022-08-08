@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct CartrackAssignmentApp: App {
+    
+    init() {
+        FileStorageManager.shared.copyDatabase("UsersData.sqlite")
+    }
+    
     var body: some Scene {
         WindowGroup {
             LoginView()

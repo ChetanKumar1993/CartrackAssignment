@@ -10,19 +10,21 @@ import Foundation
 class LoginViewModel: ObservableObject {
     
     private let validation = LoginValidation()
-    @Published var responseMsg:String?
     @Published var isValidUser:Bool = false
 
-    
     /// Method to authenticate user from sqllite dattabase
     /// - Parameter request: Input model
-    func authenticateUser(withRequest request: LoginInputModel) {
+    func authenticateUser(withRequest request: LoginInputModel, onCompletion responseMsgHandller: @escaping ((String?)->())) {
         let validationResult = validation.validate(request: request)
         if(validationResult.isValid) {
-            
+            let isUserFound = DBManager.shared.fetchRecordFromDatabase(forUser: request.userName, password: request.password)
+            if isUserFound {
+                isValidUser = isUserFound
+            }else {
+                responseMsgHandller("User not found!!")
+            }
         }else {
-            responseMsg = validationResult.message
+            responseMsgHandller(validationResult.message)
         }
     }
-
 }
